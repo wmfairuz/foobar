@@ -6,9 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 use Inertia\Inertia;
 
-  
-use Inertia\Inertia;
-
+use App\Http\Controllers\AnimalController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\StudentController;
 
