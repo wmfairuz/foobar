@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.blade')
 
 @section('title', 'Edit Form')
 @section('page-title','Edit Form')
@@ -16,8 +16,8 @@
 
         <!-- Date Of Birth Input -->
         <div class="mb-3">
-            <label for="date_of_birth" class="form-label">Date Of Birth:</label>
-            <input type="text" class="form-control" id="date_of_birth" name="date_of_birth" value="{{ $animal->date_of_birth }}" required>
+            <label for="age" class="form-label">Age:</label>
+            <input type="text" class="form-control" id="age" name="age" value="{{ $animal->age }}" required>
         </div>
 
         <!-- Sex Input -->

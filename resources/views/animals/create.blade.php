@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.blade')
 @section('title', 'Create Form')
 <style>
         /* Custom CSS to position the button at the bottom right */
@@ -26,8 +26,8 @@
 
         <!-- Date Of Birth Input -->
         <div class="mb-3">
-            <label for="date_of_birth" class="form-label">Date Of Birth:</label>
-            <input type="text" class="form-control" id="date_of_birth" name="date_of_birth" placeholder="Enter the Date of Birth" required>
+            <label for="age" class="form-label">Age:</label>
+            <input type="text" class="form-control" id="age" name="age" placeholder="Enter the animal age" required>
         </div>
 
         <!-- Sex Input -->

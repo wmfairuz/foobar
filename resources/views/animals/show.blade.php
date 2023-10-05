@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.blade')
 
 @section('title', 'Animal Details')
 
@@ -30,8 +30,8 @@
         </div>
 
         <div class="form-group">
-            <label for="date_of_birth">Date Of Birth</label>
-            <span class="form-control">{{ $animal->date_of_birth }}</span>
+            <label for="age">Age</label>
+            <span class="form-control">{{ $animal->age }}</span>
         </div>
 
         <div class="form-group">
