@@ -74,6 +74,6 @@ class PatientController extends Controller
         # code...
     
         return view('patients.show')->with(['patient' => $patients]);
-    }
+    }
 
 }
