@@ -13,8 +13,8 @@ class PatientController extends Controller
     {
         # code...
 
-        $product = Patient::all();
-        return view('patients.index')->with(['patients' => $patients]);
+        $patient = Patient::all();
+        return view('patients.index')->with(['patients' => $patient]);
     }
 
     public function create(Request $request)
@@ -28,52 +28,52 @@ class PatientController extends Controller
     {
         // Validate the request...
  
-        $patients = new Patient;
+        $patient = new Patient;
  
-        $patients->name = $request->name;
-        $patients->age = $request->age;
-        $patients->ward = $request->ward;
-        $patients->weight = $request->weight;
-        $patients->disease = $request->disease;
+        $patient->name = $request->name;
+        $patient->age = $request->age;
+        $patient->ward = $request->ward;
+        $patient->weight = $request->weight;
+        $patient->disease = $request->disease;
  
-        $patients->save();
+        $patient->save();
  
         return redirect('/patients');
 
     }
 
  
-    public function destroy(Request $request, Patient $patients)
+    public function destroy(Request $request, Patient $patient)
     {
-       $product->delete();
+       $patient->delete();
        return redirect()->route('patients.index');
     }
 
     public function edit(Request $request, Bakery $product)
     {
-       return view('patients.edit')->with(['patients' => $patients]);
+       return view('patients.edit')->with(['patients' => $patient]);
     }
 
-    public function update(Request $request,Patient $patients): RedirectResponse
+    public function update(Request $request,Patient $patient): RedirectResponse
     {
 
-        $patients->name = $request->name;
-        $patients->age = $request->age;
-        $patients->ward = $request->ward;
-        $patients->weight = $request->weight;
-        $patients->disease = $request->disease;
+        $patient->name = $request->name;
+        $patient->age = $request->age;
+        $patient->ward = $request->ward;
+        $patient->weight = $request->weight;
+        $patient->disease = $request->disease;
  
-        $patients->save();
+        $patient->save();
  
         return redirect()->route('patients.index');
 
     }
 
-    public function show(Request $request,Patient $patients)
+    public function show(Request $request,Patient $patient)
     {
         # code...
     
-        return view('patients.show')->with(['patient' => $patients]);
+        return view('patients.show')->with(['patient' => $patient]);
     }
 
 }
