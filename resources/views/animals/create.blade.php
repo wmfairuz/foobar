@@ -1,4 +1,4 @@
-@extends('layouts.blade')
+@extends('layouts.mylayout')
 @section('title', 'Create Form')
 <style>
         /* Custom CSS to position the button at the bottom right */

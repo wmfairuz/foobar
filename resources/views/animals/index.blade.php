@@ -1,4 +1,4 @@
-@extends('layouts.blade')
+@extends('layouts.mylayout')
 
 @section('title', 'Animal List')
 
