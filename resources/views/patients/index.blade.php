@@ -1,4 +1,4 @@
-@extends('patients.docs')
+@extends('layouts.docs')
 
 @section('title', 'Patient List')
 @section('page-title', 'Patient List')
