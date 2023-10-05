@@ -15,9 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->integer('student_id');
-            $table->integer('class');
-            $table->integer('course');
-            $table->string('cgpa');
+            $table->string('class');
+            $table->string('course');
+            $table->integer('cgpa');
+
             $table->timestamps();
         });
     }
