@@ -25,7 +25,7 @@ class AnimalController extends Controller
         // Validate the request...
         $animal = new Animal;
         $animal->name = $request->name;
-        $animal->date = $request->date;
+        $animal->age = $request->age;
         $animal->sex = $request->sex;
         $animal->species = $request->species;
  
@@ -51,7 +51,7 @@ class AnimalController extends Controller
     public function update(Request $request,Animal $animal)
     {
         $animal->name = $request->name;
-        $animal->date = $request->date;
+        $animal->age = $request->age;
         $animal->sex = $request->sex;
         $animal->species = $request->species;
  
