@@ -1,4 +1,4 @@
-@extends('layouts.docs')
+@extends('patients.docs')
 
 @section('title', 'Patient List')
 @section('page-title', 'Patient List')
@@ -16,7 +16,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($patient as $patient)
+            @foreach ($patients as $patients)
                 <tr>
                     <th scope="row">{{ $patient->id }}</th>
                     <td style="white-space: nowrap;">{{ $patient->name }}</td>
