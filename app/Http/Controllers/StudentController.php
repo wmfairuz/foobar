@@ -30,11 +30,11 @@ class StudentController extends Controller
  
         $student = new Student;
  
-        $product->name = $request->name;
-        $product->student_id = $request->student_id;
-        $product->class = $request->class;
-        $product->course = $request->course;
-        $product->cgpa = $request->cgpa;
+        $student->name = $request->name;
+        $student->student_id = $request->student_id;
+        $student->class = $request->class;
+        $student->course = $request->course;
+        $student->cgpa = $request->cgpa;
  
         $student->save();
  
@@ -57,11 +57,11 @@ class StudentController extends Controller
     public function update(Request $request,Student $student): RedirectResponse
     {
 
-        $product->name = $request->name;
-        $product->student_id = $request->student_id;
-        $product->class = $request->class;
-        $product->course = $request->course;
-        $product->cgpa = $request->cgpa;
+        $student->name = $request->name;
+        $student->student_id = $request->student_id;
+        $student->class = $request->class;
+        $student->course = $request->course;
+        $student->cgpa = $request->cgpa;
  
         $student->save();
  
